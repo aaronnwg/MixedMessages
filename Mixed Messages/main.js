@@ -1,17 +1,18 @@
+
 //message variables
-const messageOne = "English, Spanish, German";
-const messageTwo = "car, coche, auto";
-const messageThree = "house, casa, haus";
-const messageFour = "dog, perro, hund";
-const messageFive = "Earth, Tierra, Erde ";
+const messageOne = "Hello";
+const messageTwo = "Bonjour";
+const messageThree = "Hola";
+const messageFour = "Ciao";
+const messageFive = "Hallo";
 //image variables
-const imageOne = document.getElementById('');
-const imageTwo = document.getElementById('carPhoto');
-const imageThree = document.getElementById('housePhoto');
-const imageFour = document.getElementById('dogPhoto');
-const imageFive = document.getElementById('earthPhoto');
+const imageOne = document.getElementById('England');
+const imageTwo = document.getElementById('France');
+const imageThree = document.getElementById('Spain');
+const imageFour = document.getElementById('Italy');
+const imageFive = document.getElementById('Germany');
 //button variable
-const button = document.getElementById('');
+const button = document.getElementById('button');
 
 
 //messages array
@@ -22,8 +23,8 @@ let randomMessages = messages[Math.floor(Math.random() * messages.length)];
 
 //when button is clicked, a random message is displayed
 button.onclick = () => {
- document.getElementById('/*Empty div ID*/').innerHTML= randomMessages
- //switch statement to choose and display image
+ document.getElementByClass('message').innerHTML= randomMessages
+ //chooses and displays corresponding image
  switch(randomMessages){
     case messageOne:
         imageOne.style.display = 'block'
@@ -42,4 +43,3 @@ button.onclick = () => {
         break;
  };
 };
-
