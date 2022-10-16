@@ -18,28 +18,33 @@ const button = document.getElementById('button');
 //messages array
 const messages = [messageOne, messageTwo, messageThree, messageFour, messageFive];
 
-//randomize messages
-let randomMessages = messages[Math.floor(Math.random() * messages.length)];
+
+const messageFunction = () => {
+    //randomize messages
+    let randomMessages = messages[Math.floor(Math.random() * messages.length)];
+        
+    randomMesssages = document.getElementById('message').innerHTML
+    //chooses and displays corresponding image
+    switch(randomMessages){
+        case messageOne:
+            imageOne.style.display = 'block'
+            break;
+        case messageTwo:
+            imageTwo.style.display = 'block'
+            break;
+        case messageThree:
+            imageThree.style.display = 'block'
+            break;
+        case messageFour:
+            imageFour.style.display = 'block'
+            break;
+        case messageFive:
+            imageFive.style.display = 'block'
+            break;
+    };
+};
 
 //when button is clicked, a random message is displayed
-button.onclick = () => {
- document.getElementByClass('message').innerHTML= randomMessages
- //chooses and displays corresponding image
- switch(randomMessages){
-    case messageOne:
-        imageOne.style.display = 'block'
-        break;
-    case messageTwo:
-        imageTwo.style.display = 'block'
-        break;
-    case messageThree:
-        imageThree.style.display = 'block'
-        break;
-    case messageFour:
-        imageFour.style.display = 'block'
-        break;
-    case messageFive:
-        imageFive.style.display = 'block'
-        break;
- };
-};
+button.onclick = messageFunction 
+
+
