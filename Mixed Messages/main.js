@@ -23,8 +23,14 @@ const messageFunction = () => {
     //randomize messages
     let randomMessages = messages[Math.floor(Math.random() * messages.length)];
         
-    randomMesssages = document.getElementById('message').innerHTML
+    document.getElementById('message').innerHTML = randomMessages
     //chooses and displays corresponding image
+    imageOne.style.display = 'none';
+    imageTwo.style.display = 'none';
+    imageThree.style.display = 'none';
+    imageFour.style.display = 'none';
+    imageFive.style.display = 'none';
+
     switch(randomMessages){
         case messageOne:
             imageOne.style.display = 'block'
