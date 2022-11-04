@@ -1,4 +1,11 @@
+html{
+    background-color: rgb(255, 228, 233);
+}
+.container-fluid{
+    background-color: rgb(255, 228, 233);
+}
 
+/*Button Style*/
 .button{
   align-items: center;
   appearance: none;
@@ -42,4 +49,23 @@
 .button:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+/*Image and Container Style*/
+#image-container {
+    height: 22rem;
+    width: 50%;
+    
+}
+.image {    
+    width: 21rem;
+    height: 15rem;
+    margin: 0 auto;
+}
+
+/*footer*/
+footer {
+    background-color: rgb(121, 92, 121);
+    height: 4rem;
+    align-items: center;
 }

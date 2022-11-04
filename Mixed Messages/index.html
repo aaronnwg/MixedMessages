@@ -16,14 +16,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
     <main>
     
         <!--page header-->
         <section id="banner">
             <div class="banner row">
                 <div class="col">
-                    <h1 class="text-center">Random Language Generator</h1>
+                    <h1 class="text-center my-4">Random Language Generator</h1>
                 </div>
             </div>
         </section>
@@ -32,7 +32,7 @@
         <section id="button-section">
             <div class="instructions row">
                 <div class="col">
-                    <h2 class="text-center">Click the button to display 'Hello' in a random language.</h2>
+                    <h2 class="text-center my-4">Click the button to display 'Hello' in a random language.</h2>
                 </div>
             </div>
             <!--button-->
@@ -49,35 +49,36 @@
         <section id="display">
             <div class="row">
                 <div class="col" id="message-container">
-                    <p class=" text-center font-weight-bold jumbotron" id="message"></p>
+                    <p class=" text-center font-weight-bold jumbotron w-50 mx-auto border" id="message" style="font-size: 3rem;">???</p>
                 </div>
             </div>
             <!--Image output-->
             <div class="row">
                 <div class="col">
-                    <div id="image-container" class="jumbotron">
-                        <img src="./images/engFlag" alt="English Flag" id="England" style="display:none;">
-                        <img src="./images/fraFlag" alt="French Flag" id="France" style="display:none;">
-                        <img src="./images/spaFlag" alt="Spanish Flag" id="Spain" style="display:none;">
-                        <img src="./images/itaFlag.svg-3999998513" alt="Italian Flag" id="Italy" style="display:none;">
-                        <img src="./images/gerFlag" alt="German Flag" id="Germany" style="display:none;">
+                    <div id="image-container" class="jumbotron mx-auto w-50 two border">
+                        <img src="./images/engFlag" alt="English Flag" id="England" style="display:none;" class="image">
+                        <img src="./images/fraFlag" alt="French Flag" id="France" style="display:none;" class="image">
+                        <img src="./images/spaFlag" alt="Spanish Flag" id="Spain" style="display:none;" class="image">
+                        <img src="./images/itaFlag.svg-3999998513" alt="Italian Flag" id="Italy" style="display:none;" class="image">
+                        <img src="./images/gerFlag" alt="German Flag" id="Germany" style="display:none;" class="image">
                     </div>
-                    
+            
                 </div>
             </div>
         </section>
 
     </main>
-    <div class="row">
+    <!--footer-->
+    <div class="row m-4">
         <div class="col">
-            <footer class="row text-center fixed-bottom">
+            <footer class="row text-center text-white sticky-bottom ">
                 <!--Link to our GitHub accounts-->
                 <div class="col">
-                    <p class="us">Made by <a href="https://github.com/aaronnwg">Aaron Kessler</a> and <a href="https://github.com/HBurnton">Harrison Burnton</a></p>
+                    <p class="us">Made by <a href="https://github.com/aaronnwg" class="text-white">Aaron Kessler</a> and <a href="https://github.com/HBurnton" class="text-white">Harrison Burnton</a></p>
                 </div>
                 <!--Link to ReadMe doc-->
                 <div class="col">
-                    <p class="read-me"><a href="https://github.com/aaronnwg/MixedMessages">Link to learn about this project</a></p>
+                    <p class="read-me"><a href="https://github.com/aaronnwg/MixedMessages" class="text-white">Link to learn about this project</a></p>
                 </div>
             </footer>
         </div>
