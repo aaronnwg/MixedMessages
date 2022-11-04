@@ -7,6 +7,8 @@
     <title>Mixed Messages</title>
     <!--JavaScript-->
     <script src="./main.js" defer></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -19,8 +21,10 @@
     
         <!--page header-->
         <section id="banner">
-            <div class="banner">
-                <h1 class="row text-center">Random Language Generator</h1>
+            <div class="banner row">
+                <div class="col">
+                    <h1 class="text-center">Random Language Generator</h1>
+                </div>
             </div>
         </section>
 
@@ -28,36 +32,56 @@
         <section id="button-section">
             <div class="instructions row">
                 <div class="col">
-                <h2 class="text-center">Click the button to display 'Hello' in a random language.</h2>
+                    <h2 class="text-center">Click the button to display 'Hello' in a random language.</h2>
                 </div>
             </div>
-            <div id="button">
-                <button type="button">Click Me!</button>
+            <!--button-->
+            <div class="row" id="button">
+                <div class="col">
+                    <div class="text-center my-4">
+                        <button type="button" class="button mx-auto">Click Me!</button>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!--message output-->
         <section id="display">
-            <div id="message-container">
-                <p id="message"></p>
+            <div class="row">
+                <div class="col" id="message-container">
+                    <p class=" text-center font-weight-bold jumbotron" id="message"></p>
+                </div>
             </div>
             <!--Image output-->
-            <div id="image-container">
-                <img src="./images/engFlag" alt="English Flag" id="England" style="display:none;">
-                <img src="./images/fraFlag" alt="French Flag" id="France" style="display:none;">
-                <img src="./images/spaFlag" alt="Spanish Flag" id="Spain" style="display:none;">
-                <img src="./images/itaFlag.svg-3999998513" alt="Italian Flag" id="Italy" style="display:none;">
-                <img src="./images/gerFlag" alt="German Flag" id="Germany" style="display:none;">
+            <div class="row">
+                <div class="col">
+                    <div id="image-container" class="jumbotron">
+                        <img src="./images/engFlag" alt="English Flag" id="England" style="display:none;">
+                        <img src="./images/fraFlag" alt="French Flag" id="France" style="display:none;">
+                        <img src="./images/spaFlag" alt="Spanish Flag" id="Spain" style="display:none;">
+                        <img src="./images/itaFlag.svg-3999998513" alt="Italian Flag" id="Italy" style="display:none;">
+                        <img src="./images/gerFlag" alt="German Flag" id="Germany" style="display:none;">
+                    </div>
+                    
+                </div>
             </div>
         </section>
 
     </main>
-    <footer>
-        <!--Link to our GitHub accounts-->
-        <p class="us">Made by<a href="https://github.com/aaronnwg">Aaron Kessler</a> and <a href="https://github.com/HBurnton">Harrison Burnton</a></p>
-        <!--Link to ReadMe doc-->
-        <p class="read-me"><a href="https://github.com/aaronnwg/MixedMessages">Link to learn about this project</a></p>
-    </footer>
+    <div class="row">
+        <div class="col">
+            <footer class="row text-center fixed-bottom">
+                <!--Link to our GitHub accounts-->
+                <div class="col">
+                    <p class="us">Made by <a href="https://github.com/aaronnwg">Aaron Kessler</a> and <a href="https://github.com/HBurnton">Harrison Burnton</a></p>
+                </div>
+                <!--Link to ReadMe doc-->
+                <div class="col">
+                    <p class="read-me"><a href="https://github.com/aaronnwg/MixedMessages">Link to learn about this project</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>        
 </div>
 </body>
 
