@@ -51,6 +51,12 @@ html{
   transform: translateY(2px);
 }
 
+/*Message and Container Style*/
+#message {
+  height: 100px;
+  padding-top: 10px;
+}
+
 /*Image and Container Style*/
 #image-container {
     height: 22rem;
